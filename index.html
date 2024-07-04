@@ -8,19 +8,27 @@
   </head>
   <body>
     <header>
-     
       <!-- logo -->
       <img class="logo" src="./assets/img/logo.png" alt="logo" />
-
+      <!-- *************************** -->
+      <!-- <div id="mySidenav" class="sidenav">
+        <a id="closeBtn" href="#" class="close">×</a> -->
+      <!-- *************************** -->
       <!-- menu -->
       <ul class="menu">
         <li><a href="#">Accueil</a></li>
         <li><a href="#">Service</a></li>
         <li><a href="#">Nous Contacter</a></li>
       </ul>
-
-
-  
+      <!-- *************************** -->
+      <a href="#" id="openBtn">
+        <span class="burger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </a>
+      <!-- **************************** -->
 
       <!-- icones -->
       <div class="icones">
@@ -38,7 +46,7 @@
     </header>
 
     <!-- sections  -->
-    <!-- ------------------------------------------------------------------------------------------ ->
+    <!-- ------------------------------------------------------------------------------------------ -->
     <!-- section "heroe" -->
     <section class="section_heroe">
       <!-- a gauche -->
@@ -47,12 +55,13 @@
           La sécurité <span>incendie,</span><br />
           notre metier.
         </h1>
+        <br /><br />
         <p>
           Nous offrons des prestations de qualités aux tarifs adaptés en matiere
           de <br />
           securité incendie
         </p>
-        <button >Decouvrir nos préstations</button>
+        <button>Decouvrir nos préstations</button>
       </div>
       <!-- a droite -->
       <div class="partie_droite">
@@ -63,9 +72,12 @@
 
     <!-- deuxieme section -->
     <section class="centrale">
-      <!-- 1ere vignette -->    
+      <!-- 1ere vignette -->
       <div class="vignette">
-        <h2>CONSEILS</h2>
+        <div class="ens">
+          <span id="triangle_vert"></span>
+          <h2>CONSEILS</h2>
+        </div>
         <br />
         <p>
           Nous vous proposons conseil et assistance.<br />Dossiers
@@ -77,7 +89,10 @@
 
       <!-- deuxieme vignette -->
       <div class="vignette">
-        <h2>FORMATIONS</h2>
+        <div class="ens">
+          <span id="triangle_jaune"></span>
+          <h2>FORMATIONS</h2>
+        </div>
         <br />
         <p>
           Besoins de vous former,de faire former vos.<br />salariés consultez
@@ -90,7 +105,10 @@
 
       <!-- troisieme vignette -->
       <div class="vignette">
-        <h2>SECURITE ET AUDITS</h2>
+        <div class="ens">
+          <span id="triangle_orange"></span>
+          <h2>SECURITE ET AUDITS</h2>
+        </div>
         <br />
         <p>
           Services et sécurité incendie pour des<br />evenements? Fournitures
@@ -140,7 +158,7 @@
     <!-- cinquieme section -->
     <section class="chiffres">
       <div class="statistiques">
-        <h2 id="quatre">4</h2>
+        <h2 id="quatre" style="font-weight: 500">4</h2>
         <p>
           ce sont nos domaines de competences<br />que l'on maitrise sur le bout
           des doigts<br />Les conseils,formations ainsi que la <br />sécurité et
@@ -149,13 +167,13 @@
       </div>
 
       <div class="statistiques">
-        <h2 id="un">1</h2>
+        <h2 id="un" style="font-weight: 500">1</h2>
         <p>
           le nombre d'interlocuteurs afin de rentrer<br />en contact avec nous
         </p>
       </div>
       <div class="statistiques">
-        <h2 id="cent">100%</h2>
+        <h2 id="cent" style="font-weight: 500">100%</h2>
         <p>c'est le taux de professionnalisme chez nous.</p>
       </div>
     </section>

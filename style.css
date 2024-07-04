@@ -10,6 +10,11 @@ button {
   background-color: transparent;
   border-radius: 10px;
 }
+h2 {
+  font-weight: 300;
+  font-family: Montserrat;
+}
+
 /* centrage de tout les elements */
 header,
 .section_heroe,
@@ -59,42 +64,43 @@ header {
   gap: 10px;
   align-items: center;
 }
-#vert{
-  display : inline-block;
-  height : 0;
-  width : 0;
-  border-right : 87px solid transparent;
-  border-bottom : 150px solid rgb(77, 255, 0);
-  border-left : 87px solid transparent;
-  transform: scale(10%);
- }
-
-
- #orange{
-  display : inline-block;
-  height : 0;
-  width : 0;
-  border-right : 87px solid transparent;
-  border-bottom : 150px solid rgb(255, 115, 0);
-  border-left : 87px solid transparent;
- }
-
-
- #jaune{
-  display : inline-block;
-  height : 0;
-  width : 0;
-  border-right : 87px solid transparent;
-  border-bottom : 150px solid rgb(246, 222, 4);
-  border-left : 87px solid transparent;
- }
-
-.titre_vignette{
-  display: flex;
-  align-items: center;
-  
+#triangle_vert {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-top: 20px solid transparent;
+  border-right: 35px solid rgb(76, 245, 10);
+  border-bottom: 20px solid transparent;
 }
 
+#triangle_jaune {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-right: 20px solid transparent;
+  border-bottom: 35px solid rgb(241, 245, 10);
+  border-left: 20px solid transparent;
+}
+
+#triangle_orange {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-top: 30px solid rgb(255, 115, 0);
+  border-right: 17px solid transparent;
+  border-left: 17px solid transparent;
+}
+.ens {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.titre_vignette {
+  display: flex;
+  align-items: center;
+}
 
 /* ------------------------------- */
 
@@ -136,7 +142,7 @@ span {
 }
 /*section heroe*/
 
-.partie_gauche button{
+.partie_gauche button {
   margin-left: 550px;
 }
 /**/
@@ -158,23 +164,26 @@ span {
 #quatre {
   font-size: 5em;
   color: rgb(51, 236, 51);
-   -webkit-text-stroke: 1px rgb(15, 15, 15);
+  -webkit-text-stroke: 1px rgb(15, 15, 15);
   text-stroke: 4px rgb(16, 16, 17);
-  text-shadow: 2px 2px 50px rgb(51, 236, 51);
+  text-shadow: 2px 2px 50px rgb(51, 236, 51), 9px 0 18px #ffd500,
+    11px 10px 18px #79eb0f, 12px 12px 15px rgba(77, 66, 0, 0.5);
 }
 #un {
   font-size: 5em;
   color: rgb(233, 236, 9);
   -webkit-text-stroke: 1px rgb(15, 15, 15);
   text-stroke: 4px rgb(16, 16, 17);
-  text-shadow: 2px 2px 150px rgb(233, 236, 9);
+  text-shadow: 20px 20px 550px rgb(233, 236, 9), 9px 0 18px #ffd500;
 }
+
 #cent {
   font-size: 5em;
-  color: rgb(236, 122, 16);
+  color: rgb(236, 92, 9);
   -webkit-text-stroke: 1px rgb(15, 15, 15);
   text-stroke: 4px rgb(16, 16, 17);
-  text-shadow: 20px 2px 50px 100px rgb(236, 122, 16);
+  text-shadow: 20px 200px 550px rgb(236, 119, 9), 19px 0 58px #ff6600,
+    19px 0 58px #ff6600, 19px 0 58px #ff6600;
 }
 
 h1 {
@@ -185,18 +194,20 @@ h1 {
   height: 1px;
   background: black;
 }
-#openBtn{
+#openBtn {
   display: none;
 }
 
-
-
 /*----------------------------------*/
+
+.sidenav,
+.close {
+  display: none;
+}
 
 /* media queries */
 
-@media screen and (max-width: 768px) {
-
+@media screen and (max-width: 1080px) {
   .section_heroe,
   .centrale,
   .decouverte,
@@ -207,54 +218,120 @@ h1 {
   .gauche,
   .menu {
     display: block;
-   
   }
-.icones{
-  display: none;
-}
+  .icones {
+    display: none;
+  }
 
-.logo{
-  position: absolute;
-  width: 20%;
-  left: 50px;
-  
-}
-.partie_droite{
-  display: none;
-}
-header{
-  justify-content: right;
-}
-.logoBig{
-  display: block;
-  margin: 40px auto;
+  .logo {
+    position: absolute;
+    width: 20%;
+    left: 50px;
+  }
+  .partie_droite {
+    display: none;
+  }
+  header {
+    justify-content: right;
+  }
+  .logoBig {
+    display: block;
+    margin: 40px auto;
+  }
+  .vignette {
+    margin-bottom: 25%;
+  }
+  .decouverte h1 {
+    font-size: 2em;
+  }
+  .gauche {
+    margin-left: 0 !important;
+  }
+  .partie_gauche button {
+    margin-left: 165px;
+    margin-top: 20px;
+  }
 
-}
-.vignette{
-  margin-bottom: 25%;
-}
-.decouverte h1{
-  font-size: 2em;
-}
- .gauche{
- margin-left: 0 !important;
-}
-.partie_gauche button{
-  margin-left: 185px;
-  margin-top: 20px;
-}
+  #openBtn {
+    display: block;
+    margin-right: 10%;
+  }
 
-#openBtn{
-  display: block;
+  .menu {
+    margin-left: 100%;
+  }
+
+  /* menu caché  */
+
+  /* Sidenav menu */
+  header {
+    width: 100%;
+  }
+  .sidenav {
+    display: block;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+  }
+
+  /* Sidenav menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #111;
+  }
+
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Active class */
+  .sidenav.active {
+    left: 0;
+  }
+
+  /* Close btn */
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+
+  /* Icône burger */
+  .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+    padding-right: 15%;
+  }
+  .burger-icon {
+    margin-right: 0;
+  }
+
+  .logo {
+    width: 20%;
+  }
+  .menu {
+    display: none;
+  }
 }
-
-.menu{
-   margin-left:  100% ;
-}
-
-}
-
-
-
 
 /*-------------------------------------------------------*/

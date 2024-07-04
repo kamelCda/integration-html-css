@@ -1,0 +1,260 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif; */
+  font-family: Montserrat;
+}
+button {
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+/* centrage de tout les elements */
+header,
+.section_heroe,
+.centrale,
+.decouverte,
+.description,
+.chiffres,
+.line,
+footer,
+.gauche {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+header {
+  height: 80px;
+  margin-top: 50px;
+  margin-bottom: 5%;
+}
+
+/* gestion  des tailles  d'images */
+
+/* logo */
+.logo {
+  display: inline;
+  width: 10%;
+}
+/* icones */
+.tel {
+  display: inline;
+  width: 50%;
+  margin: 0;
+  margin-left: 10px;
+}
+.mail {
+  display: inline;
+  width: 50%;
+}
+
+.icones {
+  width: 5%;
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+#vert{
+  display : inline-block;
+  height : 0;
+  width : 0;
+  border-right : 87px solid transparent;
+  border-bottom : 150px solid rgb(77, 255, 0);
+  border-left : 87px solid transparent;
+  transform: scale(10%);
+ }
+
+
+ #orange{
+  display : inline-block;
+  height : 0;
+  width : 0;
+  border-right : 87px solid transparent;
+  border-bottom : 150px solid rgb(255, 115, 0);
+  border-left : 87px solid transparent;
+ }
+
+
+ #jaune{
+  display : inline-block;
+  height : 0;
+  width : 0;
+  border-right : 87px solid transparent;
+  border-bottom : 150px solid rgb(246, 222, 4);
+  border-left : 87px solid transparent;
+ }
+
+.titre_vignette{
+  display: flex;
+  align-items: center;
+  
+}
+
+
+/* ------------------------------- */
+
+/* gestion des elements du menu */
+.menu li {
+  list-style-type: none;
+}
+.menu li a {
+  text-decoration: none;
+}
+/* ----------------------------------- */
+
+/* gestion du menu */
+.menu {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+/* ------------------------------------- */
+/*  gestion des sections  */
+
+span {
+  color: rgb(182, 67, 0);
+}
+.section_heroe,
+.centrale,
+.description,
+.chiffres,
+.gauche {
+  margin-top: 15%;
+  justify-content: space-between;
+}
+/*section heroe*/
+
+.partie_gauche button{
+  margin-left: 550px;
+}
+/**/
+.decouverte {
+  margin-top: 10%;
+}
+.description,
+.chiffres,
+.line {
+  margin-top: 5%;
+}
+.statistiques {
+  text-align: center;
+}
+.gauche {
+  width: 20%;
+  margin-top: 5%;
+}
+#quatre {
+  font-size: 5em;
+  color: rgb(51, 236, 51);
+   -webkit-text-stroke: 1px rgb(15, 15, 15);
+  text-stroke: 4px rgb(16, 16, 17);
+  text-shadow: 2px 2px 50px rgb(51, 236, 51);
+}
+#un {
+  font-size: 5em;
+  color: rgb(233, 236, 9);
+  -webkit-text-stroke: 1px rgb(15, 15, 15);
+  text-stroke: 4px rgb(16, 16, 17);
+  text-shadow: 2px 2px 150px rgb(233, 236, 9);
+}
+#cent {
+  font-size: 5em;
+  color: rgb(236, 122, 16);
+  -webkit-text-stroke: 1px rgb(15, 15, 15);
+  text-stroke: 4px rgb(16, 16, 17);
+  text-shadow: 20px 2px 50px 100px rgb(236, 122, 16);
+}
+
+h1 {
+  font-size: 3em;
+}
+
+.line {
+  height: 1px;
+  background: black;
+}
+#openBtn{
+  display: none;
+}
+
+
+
+/*----------------------------------*/
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+
+  .section_heroe,
+  .centrale,
+  .decouverte,
+  .description,
+  .chiffres,
+  .line,
+  footer,
+  .gauche,
+  .menu {
+    display: block;
+   
+  }
+.icones{
+  display: none;
+}
+
+.logo{
+  position: absolute;
+  width: 20%;
+  left: 50px;
+  
+}
+.partie_droite{
+  display: none;
+}
+header{
+  justify-content: right;
+}
+.logoBig{
+  display: block;
+  margin: 40px auto;
+
+}
+.vignette{
+  margin-bottom: 25%;
+}
+.decouverte h1{
+  font-size: 2em;
+}
+ .gauche{
+ margin-left: 0 !important;
+}
+.partie_gauche button{
+  margin-left: 185px;
+  margin-top: 20px;
+}
+
+#openBtn{
+  display: block;
+}
+
+.menu{
+   margin-left:  100% ;
+}
+
+}
+
+
+
+
+/*-------------------------------------------------------*/
